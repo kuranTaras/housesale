@@ -1,0 +1,75 @@
+.our
+  padding: 0 20px
+  .container
+    flex-direction: column
+    margin-bottom: 70px
+    h1
+      font-family: Nunito, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 36px
+      line-height: 136.1%
+      color: #323232
+      margin-bottom: 45px
+    .our__products
+      display: flex
+      flex-wrap: wrap
+      justify-content: left
+      margin-left: -20px
+      .our__product
+        &:hover
+          .our__text
+            background-color: #FFC839
+            box-shadow: 0px 4px 35px rgba(196, 143, 7, 0.49)
+        margin-left: 20px
+        max-width: calc(33.3333% - 20px)
+        width: 33%
+        margin-bottom: 30px
+        flex-direction: column
+        display: none
+        @media (max-width: 768px)
+          width: 100%
+          max-width: calc(50% - 20px)
+        @media (max-width: 480px)
+          max-width: calc(100% - 20px)
+        .our__image
+          width: 100%
+          height: 300px
+          display: flex
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        .our__text
+          transition-duration: 0.5s
+          background-color: #FFFFFF
+          box-shadow: 0px 4px 59px -14px rgba(171,124,0,0.29)
+          padding: 15px 0
+          h4
+            &:first-child
+              font-weight: 600
+              font-size: 22px
+            font-family: Nunito, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 133.3%
+            color: #000
+            padding: 5px 20px
+            span
+              color: #4A4A4A
+              font-size: 18px
+      .our__product-active
+        display: flex
+      .our__error
+        width: 100%
+        display: none
+        h3
+          font-family: Nunito, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 29px
+          line-height: 131%
+          color: #646464
+          margin: 0 auto
+          text-align: center

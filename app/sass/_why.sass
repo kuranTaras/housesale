@@ -1,0 +1,100 @@
+.why
+  padding: 0 0 0 20px
+  @media (max-width: 480px)
+    padding: 0 20px
+  .container
+    justify-content: space-between
+    margin-bottom: 98px
+    @media (max-width: 480px)
+      flex-direction: column
+    .why__left
+      display: flex
+      flex-direction: column
+      margin-right: 95px
+      width: 58.1%
+      @media (max-width: 768px)
+        margin-right: 50px
+      @media (max-width: 480px)
+        width: 100%
+        margin-right: 0
+      h2
+        font-family: Nunito, sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 36px
+        line-height: 136.1%
+        color: #323232
+        @media (max-width: 768px)
+          font-size: 28px
+        @media (max-width: 480px)
+          text-align: center
+      .why__reasons
+        display: flex
+        flex-direction: column
+        margin-top: 65px
+        .why__reason
+          &:not(:last-child)
+            margin-bottom: 51px
+          display: flex
+          .why__photo
+            min-width: 92px
+            max-width: 92px
+            height: 92px
+            margin-right: 29px
+            img
+              border-radius: 50%
+              width: 100%
+              height: 100%
+          .why__text
+            display: flex
+            flex-direction: column
+            h3
+              font-family: Nunito, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 29px
+              line-height: 131%
+              color: #4A4A4A
+              margin-bottom: 17px
+              @media (max-width: 768px)
+                font-size: 20px
+                margin-bottom: 10px
+            p
+              font-family: Nunito, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 21px
+              line-height: 133.3%
+              color: #4A4A4A
+              @media (max-width: 768px)
+                font-size: 15px
+    .why__right
+      &:hover
+        .why-background
+          transform: translate(-17.4%, -50%)
+      width: 34.2%
+      height: 555px
+      display: flex
+      margin-top: 11px
+      cursor: pointer
+      position: relative
+      @media (max-width: 480px)
+        width: 100%
+        margin-top: 50px
+      img
+        position: relative
+        z-index: 5
+        width: 100%
+        height: 100%
+        object-fit: cover
+      .why-background
+        z-index: 1
+        transition-duration: 0.5s
+        width: 100%
+        position: absolute
+        height: 77.6%
+        transform: translateY(-50%)
+        top: 50%
+        background-color: #FFC839
+        @media (max-width: 480px)
+          display: none

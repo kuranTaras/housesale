@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>House Sale</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="" class="header__logo">
+                    <img src="img/header/01.png" alt="">
+                </a>
+                <div class="header__menu">
+                    <a href="">On sale</a>
+                    <a href="">For rent</a>
+                    <a href="">New Residential Project</a>
+                    <a href="">Property News</a>
+                </div>
+            </div>
+            <div class="header__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section class="banner">
+            <div class="container">
+                <h1>Quality home services, on demand</h1>
+                <h2>Experienced, hand-picked Professionals to serve you at your doorstep</h2>
+                <div class="banner__form">
+                    <div class="banner__top">
+                        <div class="banner__action banner_input banner_change">
+                            <span class="banner-action_chosen" data-action="none">Action</span>
+                            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9851 0.559751C15.7743 0.348898 15.4316 0.348898 15.2208 0.559751L8.49985 7.29386L1.76574 0.559751C1.55489 0.348898 1.21225 0.348898 1.0014 0.559751C0.790549 0.770603 0.790549 1.11324 1.0014 1.32409L8.1045 8.42719C8.20993 8.53262 8.34171 8.58533 8.48667 8.58533C8.61846 8.58533 8.76342 8.53262 8.86884 8.42719L15.9719 1.32409C16.196 1.11324 16.196 0.770603 15.9851 0.559751Z" fill="black"/>
+                            </svg>
+                            <div class="banner__changes">
+                                <span class="banner-action_item" data-action="none">Action</span>
+                                <span class="banner-action_item" data-action="on-sale">On Sale</span>
+                                <span class="banner-action_item" data-action="no-sale">No sale</span>
+                            </div>
+                        </div>
+                        <input placeholder="Product" class="banner-text banner_input" type="text">
+                    </div>
+                    <div class="banner__bottom">
+                        <div class="banner_type banner_input banner_change">
+                            <span class="banner-type_chosen" data-type="none">Type</span>
+                            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9851 0.559751C15.7743 0.348898 15.4316 0.348898 15.2208 0.559751L8.49985 7.29386L1.76574 0.559751C1.55489 0.348898 1.21225 0.348898 1.0014 0.559751C0.790549 0.770603 0.790549 1.11324 1.0014 1.32409L8.1045 8.42719C8.20993 8.53262 8.34171 8.58533 8.48667 8.58533C8.61846 8.58533 8.76342 8.53262 8.86884 8.42719L15.9719 1.32409C16.196 1.11324 16.196 0.770603 15.9851 0.559751Z" fill="black"/>
+                            </svg>
+                            <div class="banner__changes">
+                                <span class="banner-type_item" data-type="none">Type</span>
+                                <span class="banner-type_item" data-type="in-house">In house</span>
+                                <span class="banner-type_item" data-type="out-house">Out House</span>
+                            </div>
+                        </div>
+                        <div class="banner__sort banner_input banner_change">
+                            <span class="banner-sort_chosen" data-sort="none">Sort by:</span>
+                            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9851 0.559751C15.7743 0.348898 15.4316 0.348898 15.2208 0.559751L8.49985 7.29386L1.76574 0.559751C1.55489 0.348898 1.21225 0.348898 1.0014 0.559751C0.790549 0.770603 0.790549 1.11324 1.0014 1.32409L8.1045 8.42719C8.20993 8.53262 8.34171 8.58533 8.48667 8.58533C8.61846 8.58533 8.76342 8.53262 8.86884 8.42719L15.9719 1.32409C16.196 1.11324 16.196 0.770603 15.9851 0.559751Z" fill="black"/>
+                            </svg>
+                            <div class="banner__changes">
+                                <span class="banner-sort_item" data-sort="low-high">Price: Low to High</span>
+                                <span class="banner-sort_item" data-sort="high-low">Price: High to Low</span>
+                            </div>
+                        </div>
+                        <div class="banner__color banner_input banner_change">
+                            <span class="banner-color_chosen" data-color="none">Color</span>
+                            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9851 0.559751C15.7743 0.348898 15.4316 0.348898 15.2208 0.559751L8.49985 7.29386L1.76574 0.559751C1.55489 0.348898 1.21225 0.348898 1.0014 0.559751C0.790549 0.770603 0.790549 1.11324 1.0014 1.32409L8.1045 8.42719C8.20993 8.53262 8.34171 8.58533 8.48667 8.58533C8.61846 8.58533 8.76342 8.53262 8.86884 8.42719L15.9719 1.32409C16.196 1.11324 16.196 0.770603 15.9851 0.559751Z" fill="black"/>
+                                <div class="banner__changes">
+                                    <span class="banner-color_item" data-color="none">Color</span>
+                                    <span class="banner-color_item" data-color="black">Black</span>
+                                    <span class="banner-color_item" data-color="white">White</span>
+                                    <span class="banner-color_item" data-color="gold">Gold</span>
+                                    <span class="banner-color_item" data-color="brown">Brown</span>
+                                </div>
+                            </svg>
+                        </div>
+                        <button class="banner__submit">Search</button>
+                    </div>
+                </div>
+                <img src="img/banner/01.png" alt="" class="banner-background">
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__column">
+                    <div class="gallery__photo">
+                        <img src="img/gallery/01.png" alt="">
+                    </div>
+                    <div class="gallery__text">
+                        <div class="gallery__arrow">
+                            <img src="img/gallery/04.png" alt="">
+                        </div>
+                        <span>Same great quality. New lower prices.</span>
+                    </div>
+                </div>
+                <div class="gallery__column">
+                    <div class="gallery__photo">
+                        <img src="img/gallery/02.png" alt="">
+                    </div>
+                    <div class="gallery__text">
+                        <div class="gallery__arrow">
+                            <img src="img/gallery/04.png" alt="">
+                        </div>
+                        <span>Everyday Essentials, High quality affordable </span>
+                    </div>
+                </div>
+                <div class="gallery__column">
+                    <div class="gallery__photo">
+                        <img src="img/gallery/03.png" alt="">
+                    </div>
+                    <div class="gallery__text">
+                        <div class="gallery__arrow">
+                            <img src="img/gallery/04.png" alt="">
+                        </div>
+                        <span>Join the makeover journey </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our">
+            <div class="container">
+                <h1>Our products</h1>
+                <div class="our__products">
+                    <a href="" class="our__product our__product-active" data-action="on-sale" data-type="in-house" data-color="white" data-price="300">
+                        <div class="our__image">
+                            <img src="img/our/01.jpeg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Bath</h4>
+                            <h4>Action: <span>On sale</span></h4>
+                            <h4>Type: <span>In house</span></h4>
+                            <h4>Color: <span>White</span></h4>
+                            <h4>Price: <span>300$</span></h4>
+                        </div>
+                    </a>
+                    <a href="" class="our__product our__product-active" data-action="no-sale" data-type="in-house" data-color="black" data-price="49">
+                        <div class="our__image">
+                            <img src="img/our/02.jpg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Nightstand</h4>
+                            <h4>Action: <span>No sale</span></h4>
+                            <h4>Type: <span>In house</span></h4>
+                            <h4>Color: <span>Black</span></h4>
+                            <h4>Price: <span>49$</span></h4>
+                        </div>
+                    </a>
+                    <a href="" class="our__product our__product-active" data-action="on-sale" data-type="out-house" data-color="gold" data-price="99">
+                        <div class="our__image">
+                            <img src="img/our/03.jpg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Chair cocoon</h4>
+                            <h4>Action: <span>On sale</span></h4>
+                            <h4>Type: <span>Out house</span></h4>
+                            <h4>Color: <span>Gold</span></h4>
+                            <h4>Price: <span>99$</span></h4>
+                        </div>
+                    </a>
+                    <a href="" class="our__product our__product-active" data-action="no-sale" data-type="in-house" data-color="black" data-price="400">
+                        <div class="our__image">
+                            <img src="img/our/04.jpg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Bed</h4>
+                            <h4>Action: <span>No sale</span></h4>
+                            <h4>Type: <span>In house</span></h4>
+                            <h4>Color: <span>Black</span></h4>
+                            <h4>Price: <span>400$</span></h4>
+                        </div>
+                    </a>
+                    <a href="" class="our__product our__product-active" data-action="on-sale" data-type="in-house" data-color="white" data-price="120">
+                        <div class="our__image">
+                            <img src="img/our/05.jpg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Door</h4>
+                            <h4>Action: <span>On sale</span></h4>
+                            <h4>Type: <span>In house</span></h4>
+                            <h4>Color: <span>White</span></h4>
+                            <h4>Price: <span>120$</span></h4>
+                        </div>
+                    </a>
+                    <a href="" class="our__product our__product-active" data-action="no-sale" data-type="out-house" data-color="white" data-price="2000">
+                        <div class="our__image">
+                            <img src="img/our/06.jpg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Swimming pool</h4>
+                            <h4>Action: <span>No sale</span></h4>
+                            <h4>Type: <span>Out house</span></h4>
+                            <h4>Color: <span>White</span></h4>
+                            <h4>Price: <span>2000$</span></h4>
+                        </div>
+                    </a>
+                    <a href="" class="our__product our__product-active" data-action="on-sale" data-type="out-house" data-color="brown" data-price="1299">
+                        <div class="our__image">
+                            <img src="img/our/07.jpg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Pavilion</h4>
+                            <h4>Action: <span>On sale</span></h4>
+                            <h4>Type: <span>Out house</span></h4>
+                            <h4>Color: <span>Brown</span></h4>
+                            <h4>Price: <span>1299$</span></h4>
+                        </div>
+                    </a>
+                    <a href="" class="our__product our__product-active" data-action="no-sale" data-type="in-house" data-color="brown" data-price="75">
+                        <div class="our__image">
+                            <img src="img/our/08.jpg" alt="">
+                        </div>
+                        <div class="our__text">
+                            <h4 class="our-name">Mirror</h4>
+                            <h4>Action: <span>No sale</span></h4>
+                            <h4>Type: <span>In house</span></h4>
+                            <h4>Color: <span>Brown</span></h4>
+                            <h4>Price: <span>75$</span></h4>
+                        </div>
+                    </a>
+                    <div class="our__error">
+                        <h3>Sorry, this product not found</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why">
+            <div class="container">
+                <div class="why__left">
+                    <h2>Why housesale Company?</h2>
+                    <div class="why__reasons">
+                        <div class="why__reason">
+                            <div class="why__photo">
+                                <img src="img/why/01.png" alt="">
+                            </div>
+                            <div class="why__text">
+                                <h3>Transparent pricing</h3>
+                                <p>See fixed prices before you book. No hidden charges.</p>
+                            </div>
+                        </div>
+                        <div class="why__reason">
+                            <div class="why__photo">
+                                <img src="img/why/02.png" alt="">
+                            </div>
+                            <div class="why__text">
+                                <h3>Experts only</h3>
+                                <p>Our professionals are well trained and have on-job expertise.</p>
+                            </div>
+                        </div>
+                        <div class="why__reason">
+                            <div class="why__photo">
+                                <img src="img/why/03.png" alt="">
+                            </div>
+                            <div class="why__text">
+                                <h3>Fully equipped</h3>
+                                <p>We bring everything needed to get the job done well.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why__right">
+                    <img class="why-image" src="img/why/04.png" alt="">
+                    <div class="why-background"></div>
+                </div>
+            </div>
+        </section>
+        <section class="connect">
+            <div class="container">
+                <h2>Book professionals from your phone</h2>
+                <p>Enter your mobile number to get the professionals help</p>
+                <div class="connect__phone">
+                    <div class="form">
+                        <input id="phone" type="tel" placeholder="00-000-000">
+                        <button class="connect-submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="images">
+            <div class="container">
+                <h1>More ideas and inspiration</h1>
+                <div class="images__gallery">
+                    <img src="img/images/01.png" alt="">
+                    <img src="img/images/02.png" alt="">
+                    <img src="img/images/03.png" alt="">
+                    <img src="img/images/04.png" alt="">
+                    <img src="img/images/05.png" alt="">
+                    <img src="img/images/06.png" alt="">
+                    <img src="img/images/07.png" alt="">
+                    <img src="img/images/08.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="ideas">
+            <div class="container">
+                <h1>More ideas and inspiration</h1>
+                <div class="ideas__bottom">
+                    <div class="ideas__text">
+                        <p>Housesale chose to work together with the Lebanese designer Nada Debs. We are thrilled to present this collaboration and the LJUV collection, and we hope that you can see, feel, use the connection between a designer from the Middle East  democratic design.<br><br> Nada Debs is a Levantine designer living and working in Beirut. Her work spans scale and discipline: from product to furniture design to one-off commission across craft, art, fashion, and interiors. Nada grew up in Japan, studied design in Rhode Island School of Design in the US, and has spent significant periods living and traveling the world, finding connections of each of her experiences in all her work. She calls her approach handmade, and heart-made!</p>
+                        <a href="">More Collection</a>
+                    </div>
+                    <div class="ideas__images">
+                        <img src="img/ideas/01.png" alt="">
+                        <img src="img/ideas/02.png" alt="">
+                        <img src="img/ideas/03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore">
+            <div class="container">
+                <div class="explore__text">
+                    <div class="explore__products">
+                        <p><a href="">Sofas</a> | <a href="">Beds</a> | <a href="">Dining</a> | <a href="">Tv units</a> |
+                            <a href="">Mattresses</a> | <a href="">Seating</a> | <a href="">Coffee tables</a> | <a href="">Wardrobes</a> |
+                            <a href="">Storage</a> | <a href="">Bookshelves</a> | <a href="">Shoe racks</a> | <a href="">Decor</a> |
+                            <a href="">Bathroom</a> | <a href="">Textiles</a> | <a href="">Pots & plants</a> | <a href="">Home electronics</a> |
+                            <a href="">Home improvement</a> | <a href="">Lighting</a></p>
+                    </div>
+                    <div class="explore__about">
+                        <h1>Explore our furniture & home furnishing range</h1>
+                        <p><span>IKEA is a global leader in life at home.</span><br><br>
+
+                            Whether you just moved into a new home or looking to revamp your current one, we at IKEA are here to inspire you with affordable home furniture solutions, there is a piece of furniture to every corner of your home. Create a home that is perfect for you.<br><br>
+
+                            Shopping at IKEA is a bit different and exciting compared to your shopping at an everyday retail. It is about experiencing solutions first hand and getting to know ideas and inspirations that can fit perfectly into your home. That’s why, we offer more than 7500 products, solutions at our store along with home furnishing ideas and services for you to explore.<br><br>
+
+                            When you visit IKEA store, make yourself at home in our many room settings in the store. Squeeze the upholsteries, feel the oriental rugs, try the sofa beds and open the cabinets to feel the quality. On the price tag, you’ll find all you need to know about a product, including where in the store you can pick it up.<br><br>
+
+                            Since most IKEA furniture is flat-packed, they are quite easy to bring home when you buy from the store.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__menu">
+                    <a href="">Delivery Service</a>
+                    <a href="">Assembly Service</a>
+                    <a href="">Customer Service</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Near Me</a>
+                    <a href="">Careers</a>
+                    <a href="">Gift Cards</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer__center">
+                <h2>Serving in</h2>
+                <div class="footer__locations">
+                    <div class="footer__location">
+                        <h3>Australia</h3>
+                        <div class="footer__cities">
+                            <span>Sydney</span>
+                            <span>Albury</span>
+                            <span>Queensland</span>
+                            <span>Adelaide</span>
+                            <span>Hobart</span>
+                            <span>Darwin</span>
+                            <span>Canberra</span>
+                            <span>Perth</span>
+                            <span>Melbourne</span>
+                        </div>
+                    </div>
+                    <div class="footer__location">
+                        <h3>UAE</h3>
+                        <div class="footer__cities">
+                            <span>Dubai</span>
+                            <span>Abu Dhabi</span>
+                            <span>Sharjah</span>
+                            <span>Ajman</span>
+                            <span>Al Ain</span>
+                        </div>
+                    </div>
+                    <div class="footer__location">
+                        <h3>USA</h3>
+                        <div class="footer__cities">
+                            <span>New York</span>
+                            <span>Los Angeles</span>
+                            <span>Chicago</span>
+                            <span>Houston</span>
+                            <span>Philadelphia</span>
+                            <span>San Diego</span>
+                            <span>Washington</span>
+                            <span>Boston</span>
+                            <span>Oklahoma City</span>
+                            <span>Las Vegas</span>
+                        </div>
+                    </div>
+                    <div class="footer__location">
+                        <h3>Maxico</h3>
+                        <div class="footer__cities">
+                            <span>Mexico City</span>
+                            <span>Ecatepec</span>
+                            <span>Guadalajara</span>
+                            <span>Puebla City</span>
+                            <span>Ciudad Juárez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__logo">
+                    <img src="img/footer/01.png" alt="">
+                </div>
+                <div class="footer__copyright">
+                    <span>© 2020 Housesale Technologies Ltd.</span>
+                    <span>1760  Dancing Dove Lane, New York, USA</span>
+                    <span>sales@housesales.com</span>
+                </div>
+                <div class="footer__download">
+                    <a href="" class="footer__store">
+                        <img src="img/footer/02.png" alt="">
+                    </a>
+                    <a href="" class="footer__store">
+                        <img src="img/footer/03.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="js/app.min.js"></script>
+</body>
+</html>
